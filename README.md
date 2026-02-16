@@ -31,3 +31,6 @@ This project can be probably used with other serversides by doing some tweaks to
 ![Main menu](./Github%20images/Menu.png)
 ![About menu](./Github%20images/About.png)
 ![Settings menu](./Github%20images/Settings.png)
+
+also you can donate me some etherum
+0x4b11Ee2dd176B9e4bcAde00933F45E73C96a3134
