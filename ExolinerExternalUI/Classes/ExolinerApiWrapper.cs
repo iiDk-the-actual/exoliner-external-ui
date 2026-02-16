@@ -8,6 +8,7 @@ using System.Windows.Forms;
 namespace ExolinerExternalUI.Classes {
     internal class ExolinerApiWrapper {
         public static string JSONWebToken = null;
+        private static string SiteURL = "https://api.serverside.plus/";
         // TODO
         public static string AttemptLogin(string Email, string Password) {
             return "";
@@ -35,7 +36,7 @@ namespace ExolinerExternalUI.Classes {
 
             HttpClient client = new HttpClient(handler);
 
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://exoliner.wtf/api/v1/user/me");
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"{SiteURL}/v1/user/me");
 
             request.Headers.Add("Accept", "application/json, text/plain, */*");
             request.Headers.Add("Authorization", JSONWebToken);
@@ -63,7 +64,7 @@ namespace ExolinerExternalUI.Classes {
 
             HttpClient client = new HttpClient(handler);
 
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://exoliner.wtf/api/v1/execute");
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, $"{SiteURL}/v1/execute");
 
             request.Headers.Add("Accept", "application/json, text/plain, */*");
             request.Headers.Add("Accept-Encoding", "gzip, deflate, br, zstd");
