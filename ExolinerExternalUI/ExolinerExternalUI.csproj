@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\favicon.png" />
     <None Include="Resources\Click.wav" />
     <None Include="Resources\BellRing.wav" />
   </ItemGroup>
