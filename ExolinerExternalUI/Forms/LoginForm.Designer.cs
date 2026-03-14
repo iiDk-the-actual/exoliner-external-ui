@@ -31,14 +31,14 @@ namespace ExolinerExternalUI {
             this.panel1 = new System.Windows.Forms.Panel();
             this.rememberCheck = new System.Windows.Forms.CheckBox();
             this.errorLabel = new System.Windows.Forms.Label();
-            this.passwordBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
+            this.passwordBox = new System.Windows.Forms.TextBox();
             this.processLogin = new System.ComponentModel.BackgroundWorker();
             this.dragBar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.placeholderLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.dragBar.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +91,21 @@ namespace ExolinerExternalUI {
             this.errorLabel.Text = "403 Forbidden";
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // loginButton
+            // 
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(215)))));
+            this.loginButton.FlatAppearance.BorderSize = 0;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginButton.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.White;
+            this.loginButton.Location = new System.Drawing.Point(0, 21);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(274, 27);
+            this.loginButton.TabIndex = 7;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
             // passwordBox
             // 
             this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
@@ -102,22 +117,6 @@ namespace ExolinerExternalUI {
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(274, 22);
             this.passwordBox.TabIndex = 5;
-            // 
-            // loginButton
-            // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(79)))), ((int)(((byte)(215)))));
-            this.loginButton.FlatAppearance.BorderSize = 0;
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(0, 21);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(274, 32);
-            this.loginButton.TabIndex = 7;
-            this.loginButton.Text = "Login";
-            this.loginButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.loginButton.UseVisualStyleBackColor = false;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // processLogin
             // 
@@ -135,6 +134,21 @@ namespace ExolinerExternalUI {
             this.dragBar.Name = "dragBar";
             this.dragBar.Size = new System.Drawing.Size(284, 30);
             this.dragBar.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(74)))), ((int)(((byte)(132)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(258, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.close);
             // 
             // panel3
             // 
@@ -168,21 +182,6 @@ namespace ExolinerExternalUI {
             this.placeholderLabel.TabIndex = 0;
             this.placeholderLabel.Text = "JSON Web Token";
             this.placeholderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(74)))), ((int)(((byte)(132)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(258, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.close);
             // 
             // LoginForm
             // 

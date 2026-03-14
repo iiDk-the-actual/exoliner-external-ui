@@ -12,6 +12,12 @@ namespace ExolinerExternalUI.Forms {
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
+            this.okButton.MouseClick += OkButton_MouseClick;
+        }
+
+        private void OkButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Close();
         }
 
         #region Assembly Attribute Accessors

@@ -161,7 +161,7 @@
             this.Name = "SettingsForm";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Exoliner - settings";
+            this.Text = "Settings";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scriptRefreshNum)).EndInit();

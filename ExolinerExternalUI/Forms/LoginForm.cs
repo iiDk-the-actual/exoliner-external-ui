@@ -15,6 +15,7 @@ namespace ExolinerExternalUI {
             InitializeComponent();
             this.rememberCheck.Checked = FileManager.CurrentSettings.AutoLogin;
             this.passwordBox.Text = FileManager.CurrentSettings.JWT;
+            placeholderLabel.Visible = string.IsNullOrEmpty(passwordBox.Text);
             defaultLoginButtonText = this.loginButton.Text;
         }
 
