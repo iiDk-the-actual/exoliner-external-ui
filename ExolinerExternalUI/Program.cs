@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace ExolinerExternalUI {
     internal static class Program {
         private const string REPOSITORY_URL = "TheJustFox/exoliner-external-ui";
-        private static string ASSEMBLY_VERSION = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        public static string ASSEMBLY_VERSION = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         private class GithubResponse {
             public string tag_name { get; set; }
             public string html_url { get; set; }

@@ -7,6 +7,7 @@ namespace ExolinerExternalUI
 {
     public class FlatTabControl : TabControl
     {
+        // Entirely vibecoded. There is no way to do TabControl without getting into windows bullshit
 
         public Color StripColor = Color.FromArgb(0x0B, 0x0F, 0x1A);
         public Color PageColor = Color.FromArgb(0x0A, 0x0A, 0x0F);

@@ -51,7 +51,7 @@ namespace ExolinerExternalUI {
             this.randomPhraseLabel.Name = "randomPhraseLabel";
             this.randomPhraseLabel.Size = new System.Drawing.Size(274, 17);
             this.randomPhraseLabel.TabIndex = 1;
-            this.randomPhraseLabel.Text = "external v1.0.4.1";
+            this.randomPhraseLabel.Text = $"external v{Program.ASSEMBLY_VERSION}";
             this.randomPhraseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
