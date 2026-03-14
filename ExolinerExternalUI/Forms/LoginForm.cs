@@ -54,12 +54,14 @@ namespace ExolinerExternalUI {
             errorMessage = "";
             this.errorLabel.Text = "";
             this.loginButton.Enabled = false;
+            this.loginButton.ForeColor = Color.White;
             this.loginButton.Text = "...";
         }
 
 
         private void LoginForm_Load(object sender, System.EventArgs e) {
             this.errorLabel.Text = "";
+            this.randomPhraseLabel.Text = $"external v{Program.ASSEMBLY_VERSION}";
 
             this.passwordBox.TextChanged += (s, ex) => {
                 placeholderLabel.Visible = string.IsNullOrEmpty(passwordBox.Text);
